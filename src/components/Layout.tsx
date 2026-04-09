@@ -240,7 +240,7 @@ function Footer() {
             © 2026 Consultoria Financeira PME. Todos os direitos reservados.
           </p>
           <p className="text-primary-foreground/50 text-xs">
-            CNPJ: 00.000.000/0001-00
+            Cel: (24) 98848-0044
           </p>
         </div>
       </div>

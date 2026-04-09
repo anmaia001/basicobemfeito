@@ -695,7 +695,7 @@ function PaymentSection() {
               </div>
 
               <div className="bg-muted rounded-xl p-4 border border-border">
-                <p className="text-xs text-muted-foreground mb-2 font-medium uppercase tracking-wider">CNPJ</p>
+                <p className="text-xs text-muted-foreground mb-2 font-medium uppercase tracking-wider">Celular</p>
                 <p className="font-mono font-semibold text-foreground text-lg">{PIX_KEY}</p>
               </div>
 
