@@ -169,7 +169,7 @@ function Footer() {
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-sm">
               Quem manda no negócio precisa dominar os números.
-              Mais de 150 empresas atendidas com excelência.
+              Mais de 50 empresas atendidas com excelência.
             </p>
             <div className="flex gap-3 mt-6">
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">

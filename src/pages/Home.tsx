@@ -239,7 +239,7 @@ function AboutSection() {
                 { icon: TrendingUp, title: 'Finanças Corporativas', desc: 'Planejamento, controle e análise financeira avançada' },
                 { icon: Users, title: 'Consultoria para PME', desc: 'Metodologias adaptadas às realidades das PMEs' },
                 { icon: FileText, title: 'Reestruturação', desc: 'Recuperação financeira e reorganização de passivos' },
-                { icon: Award, title: 'Resultados Comprovados', desc: 'Mais de 150 empresas transformadas' },
+                { icon: Award, title: 'Resultados Comprovados', desc: 'Mais de 50 empresas transformadas' },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="flex gap-3">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -787,7 +787,7 @@ function TestimonialsSection() {
         <div className="mt-14 grid grid-cols-3 gap-4 max-w-lg mx-auto">
           {[
             { value: '4.9/5', label: 'Avaliação média' },
-            { value: '150+', label: 'Clientes satisfeitos' },
+            { value: '50+', label: 'Clientes satisfeitos' },
             { value: '100%', label: 'Indicariam a consultoria' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center">

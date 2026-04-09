@@ -173,7 +173,7 @@ export const availableTimes = [
 ];
 
 export const stats = [
-  { value: '150+', label: 'Empresas Atendidas' },
+  { value: '50+', label: 'Empresas Atendidas' },
   { value: 'R$ 12M+', label: 'em Passivos Renegociados' },
   { value: '94%', label: 'Taxa de Satisfação' },
   { value: '17 anos', label: 'de Experiência' },
