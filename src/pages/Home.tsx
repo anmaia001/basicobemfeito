@@ -82,9 +82,8 @@ function HeroSection() {
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground leading-tight mb-6"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Transformamos gestão financeira em{' '}
-            <span className="text-accent">resultado sustentável</span>{' '}
-            para pequenas e médias empresas.
+            Quem manda no negócio precisa{' '}
+            <span className="text-accent">dominar os números</span>.
           </motion.h1>
 
           <motion.p

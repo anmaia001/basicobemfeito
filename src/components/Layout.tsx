@@ -167,7 +167,7 @@ function Footer() {
               </div>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-sm">
-              Transformamos gestão financeira em resultado sustentável para pequenas e médias empresas.
+              Quem manda no negócio precisa dominar os números.
               Mais de 150 empresas atendidas com excelência.
             </p>
             <div className="flex gap-3 mt-6">
