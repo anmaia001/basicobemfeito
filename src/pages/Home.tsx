@@ -655,30 +655,13 @@ function PaymentSection() {
               <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
                 <QrCode className="w-6 h-6 text-accent" />
               </div>
-              {/* Fake QR Code visual */}
-              <div className="w-48 h-48 bg-foreground rounded-xl p-4 flex items-center justify-center">
-                <div className="w-full h-full bg-background rounded-lg relative overflow-hidden">
-                  <div className="grid grid-cols-8 gap-0.5 p-2 h-full">
-                    {Array.from({ length: 64 }).map((_, i) => (
-                      <div
-                        key={i}
-                        className={`rounded-sm ${
-                          [0,1,2,3,4,5,6,8,14,16,22,24,30,32,38,40,41,42,43,44,45,46,48,54,56,57,58,59,60,61,62,
-                            10,12,18,20,26,28,34,36,50,52,9,11,17,19,25,27,33,35,49,51,15,23,31,39,47,55,63].includes(i)
-                            ? 'bg-foreground'
-                            : 'bg-transparent'
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-background p-1 rounded">
-                      <div className="w-10 h-10 bg-primary rounded flex items-center justify-center">
-                        <span className="text-primary-foreground font-bold text-xs">CF</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              {/* QR Code Pix real */}
+              <div className="w-52 h-52 rounded-xl overflow-hidden border-2 border-accent/30 shadow-md">
+                <img
+                  src="/images/qrcode-pix.png"
+                  alt="QR Code Pix"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <p className="text-sm text-muted-foreground text-center">
                 Escaneie o QR Code com o app do seu banco
