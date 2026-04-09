@@ -134,6 +134,14 @@ export const testimonials: Testimonial[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'custos',
+    title: 'Conceitos Básicos de Custos: o que todo empresário precisa saber',
+    excerpt: 'Entenda a diferença entre custos e despesas, como o mercado define o preço de venda (e não você), e como classificar custos fixos, variáveis, diretos e indiretos para tomar decisões melhores.',
+    category: 'Gestão Financeira',
+    readTime: '6 min',
+    date: '09 Abr 2026',
+  },
+  {
     id: 'controladoria',
     title: 'Do financeiro operacional à controladoria estratégica nas PMEs',
     excerpt: 'Entenda como a evolução do setor financeiro — de simples executor para área de controladoria — transforma dados em decisões e impulsiona produtividade e crescimento sustentável.',
