@@ -157,38 +157,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '12 min',
     date: '09 Abr 2026',
   },
-  {
-    id: '1',
-    title: 'Como organizar o fluxo de caixa da sua PME em 5 passos',
-    excerpt: 'Descubra um método simples e eficaz para ter controle total sobre as entradas e saídas do seu negócio, evitando surpresas no final do mês.',
-    category: 'Gestão Financeira',
-    readTime: '5 min',
-    date: '15 Mar 2026',
-  },
-  {
-    id: '2',
-    title: 'Endividamento empresarial: quando negociar e como sair',
-    excerpt: 'Saiba identificar se as dívidas da sua empresa são saudáveis ou problemáticas, e conheça estratégias para renegociar e eliminar passivos.',
-    category: 'Endividamento',
-    readTime: '7 min',
-    date: '28 Fev 2026',
-  },
-  {
-    id: '3',
-    title: 'Capital de giro: o que é e por que ele salva (ou mata) empresas',
-    excerpt: 'Entenda a importância do capital de giro para a saúde financeira da sua empresa e aprenda a calcular quanto você realmente precisa.',
-    category: 'Capital de Giro',
-    readTime: '6 min',
-    date: '10 Fev 2026',
-  },
-  {
-    id: '4',
-    title: 'Como formar um gerente financeiro dentro da sua própria empresa',
-    excerpt: 'Descubra como identificar talentos internos e desenvolver uma liderança financeira competente, reduzindo dependência externa.',
-    category: 'Formação de Gestores',
-    readTime: '8 min',
-    date: '25 Jan 2026',
-  },
+
 ];
 
 export const availableTimes = [
