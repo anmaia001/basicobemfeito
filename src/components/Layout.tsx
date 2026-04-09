@@ -53,6 +53,7 @@ function Header() {
             <div className="hidden sm:block">
               <p className="text-primary-foreground font-semibold text-sm leading-tight">Consultoria</p>
               <p className="text-accent text-xs font-medium leading-tight">Financeira PME</p>
+              <p className="text-primary-foreground/50 text-xs leading-tight">www.basicobemfeito.online</p>
             </div>
           </button>
 
@@ -164,6 +165,7 @@ function Footer() {
               <div>
                 <p className="font-semibold leading-tight">Consultoria Financeira PME</p>
                 <p className="text-accent text-xs font-medium">Resultados sustentáveis</p>
+                <p className="text-primary-foreground/50 text-xs">www.basicobemfeito.online</p>
               </div>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-sm">
