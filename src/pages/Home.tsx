@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
+import ArticlePatrao from '@/pages/ArticlePatrao';
 import {
   MessageCircle, Phone, ChevronDown, TrendingUp,
   Shield, Award, Zap, Calendar, QrCode, Copy,
@@ -788,6 +790,12 @@ function TestimonialsSection() {
 // BLOG SECTION
 // ============================================================
 function BlogSection() {
+  const [openArticle, setOpenArticle] = React.useState<string | null>(null);
+
+  if (openArticle === '0') {
+    return <ArticlePatrao onBack={() => setOpenArticle(null)} />;
+  }
+
   return (
     <section id="blog" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -821,7 +829,11 @@ function BlogSection() {
         >
           {blogPosts.map((post) => (
             <motion.div key={post.id} variants={staggerItem}>
-              <BlogCard post={post} />
+              <div
+                onClick={() => post.id === '0' ? setOpenArticle('0') : undefined}
+                className={post.id === '0' ? 'cursor-pointer' : ''}>
+                <BlogCard post={post} />
+              </div>
             </motion.div>
           ))}
         </motion.div>
