@@ -62,6 +62,22 @@ export const servicePackages: ServicePackage[] = [
     ],
   },
   {
+    id: 'pack10',
+    name: 'Pacote 10 Horas',
+    price: 'R$ 2.500,00',
+    period: '/pacote',
+    description: 'Pacote de 10 horas para projetos específicos ou acompanhamento pontual do seu negócio.',
+    features: [
+      '10 horas de consultoria',
+      'Atendimento 100% online',
+      'Validade de 60 dias',
+      'Material de apoio incluso',
+      'Agendamento flexível',
+      'Relatório ao final do pacote',
+    ],
+    badge: 'Novidade',
+  },
+  {
     id: 'monthly',
     name: 'Projeto Mensal',
     price: 'R$ 5.800,00',
@@ -160,5 +176,5 @@ export const stats = [
   { value: '150+', label: 'Empresas Atendidas' },
   { value: 'R$ 12M+', label: 'em Passivos Renegociados' },
   { value: '94%', label: 'Taxa de Satisfação' },
-  { value: '8 anos', label: 'de Experiência' },
+  { value: '17 anos', label: 'de Experiência' },
 ];

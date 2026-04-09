@@ -92,7 +92,7 @@ function HeroSection() {
             className="text-primary-foreground/70 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
           >
             Soluções práticas em reestruturação financeira, controle de caixa, renegociação de dívidas
-            e desenvolvimento de lideranças para PMEs crescerem com solidez.
+            e planejamento estratégico para PMEs crescerem com solidez e rentabilidade.
           </motion.p>
 
           <motion.div
@@ -134,7 +134,7 @@ function HeroSection() {
           >
             {[
               { icon: Shield, text: 'Sigilo garantido' },
-              { icon: Award, text: '8+ anos de experiência' },
+              { icon: Award, text: '17+ anos de experiência' },
               { icon: Zap, text: 'Resultados em 30 dias' },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-2 text-primary-foreground/60 text-sm">
@@ -203,7 +203,7 @@ function AboutSection() {
             </div>
             {/* Experience badge */}
             <div className="absolute -bottom-4 -right-4 lg:right-4 bg-accent text-accent-foreground rounded-2xl px-5 py-4 shadow-xl">
-              <p className="text-2xl font-bold font-mono">8+</p>
+              <p className="text-2xl font-bold font-mono">17+</p>
               <p className="text-xs font-medium leading-tight">anos de<br />experiência</p>
             </div>
           </motion.div>
@@ -222,7 +222,7 @@ function AboutSection() {
               className="text-3xl lg:text-4xl font-bold text-foreground mb-6 leading-tight"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Especialista em Gestão Financeira para PMEs
+              17 Anos de Experiência em Gestão Financeira para PMEs
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Consultor especializado em gestão financeira empresarial, com experiência em reestruturação
@@ -349,7 +349,7 @@ function ServicesSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {servicePackages.map((pkg) => (
             <ServiceCard
               key={pkg.id}
