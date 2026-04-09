@@ -2,6 +2,7 @@ import { useState } from 'react';
 import React from 'react';
 import { motion } from 'framer-motion';
 import ArticlePatrao from '@/pages/ArticlePatrao';
+import ArticleControladoria from '@/pages/ArticleControladoria';
 import {
   MessageCircle, Phone, ChevronDown, TrendingUp,
   Shield, Award, Zap, Calendar, QrCode, Copy,
@@ -796,6 +797,10 @@ function BlogSection() {
     return <ArticlePatrao onBack={() => setOpenArticle(null)} />;
   }
 
+  if (openArticle === 'controladoria') {
+    return <ArticleControladoria onBack={() => setOpenArticle(null)} />;
+  }
+
   return (
     <section id="blog" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -830,8 +835,8 @@ function BlogSection() {
           {blogPosts.map((post) => (
             <motion.div key={post.id} variants={staggerItem}>
               <div
-                onClick={() => post.id === '0' ? setOpenArticle('0') : undefined}
-                className={post.id === '0' ? 'cursor-pointer' : ''}>
+                onClick={() => (post.id === '0' || post.id === 'controladoria') ? setOpenArticle(post.id) : undefined}
+                className={(post.id === '0' || post.id === 'controladoria') ? 'cursor-pointer' : ''}>
                 <BlogCard post={post} />
               </div>
             </motion.div>

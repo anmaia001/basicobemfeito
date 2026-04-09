@@ -134,6 +134,14 @@ export const testimonials: Testimonial[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'controladoria',
+    title: 'Do financeiro operacional à controladoria estratégica nas PMEs',
+    excerpt: 'Entenda como a evolução do setor financeiro — de simples executor para área de controladoria — transforma dados em decisões e impulsiona produtividade e crescimento sustentável.',
+    category: 'Gestão Financeira',
+    readTime: '8 min',
+    date: '09 Abr 2026',
+  },
+  {
     id: '0',
     title: 'O Patrão Sou Eu: Guia Prático para o Empreendedor',
     excerpt: 'Uma síntese analítica da obra de Giovana Simonaci: seis perguntas fundamentais que todo empresário deve responder antes de abrir — ou transformar — seu negócio.',
