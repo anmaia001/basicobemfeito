@@ -235,7 +235,7 @@ function AboutSection() {
             </p>
 
             {/* Experience items */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-8">
               {[
                 { icon: TrendingUp, title: 'Finanças Corporativas', desc: 'Planejamento, controle e análise financeira avançada' },
                 { icon: Users, title: 'Consultoria para PME', desc: 'Metodologias adaptadas às realidades das PMEs' },
@@ -246,7 +246,7 @@ function AboutSection() {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Icon className="w-5 h-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="font-semibold text-sm text-foreground">{title}</p>
                     <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
                   </div>
