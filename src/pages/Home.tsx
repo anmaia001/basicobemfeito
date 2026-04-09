@@ -221,7 +221,7 @@ function AboutSection() {
               className="text-3xl lg:text-4xl font-bold text-foreground mb-6 leading-tight"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              17 Anos de Experiência em Gestão Financeira para PMEs
+              Experiência em Gestão Financeira para PMEs
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Consultor especializado em gestão financeira empresarial, com experiência em reestruturação
