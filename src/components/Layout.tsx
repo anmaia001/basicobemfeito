@@ -221,8 +221,8 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:contato@consultoriapme.com.br" className="hover:text-primary-foreground transition-colors">
-                  contato@consultoriapme.com.br
+                <a href="mailto:anmaia001@icloud.com" className="hover:text-primary-foreground transition-colors">
+                  anmaia001@icloud.com
                 </a>
               </li>
               <li className="text-primary-foreground/50 text-xs mt-4">
