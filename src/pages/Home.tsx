@@ -909,7 +909,6 @@ export default function Home() {
       <ServicesSection />
       <SchedulingSection />
       <PaymentSection />
-      <TestimonialsSection />
       <BlogSection />
       <CtaSection />
     </>

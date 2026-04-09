@@ -45,5 +45,5 @@ export interface TimeSlot {
 
 export const WHATSAPP_NUMBER = '5511999999999';
 export const WHATSAPP_MESSAGE = 'Olá! Gostaria de agendar uma consultoria financeira.';
-export const PIX_KEY = '00.000.000/0001-00';
-export const PIX_NAME = 'Consultoria Financeira PME';
+export const PIX_KEY = '24988480044';
+export const PIX_NAME = 'André Benedito Pereira Maia';
