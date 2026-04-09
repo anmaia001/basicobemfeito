@@ -10,7 +10,6 @@ const navItems = [
   { label: 'Sobre', href: 'sobre' },
   { label: 'Especialidades', href: 'especialidades' },
   { label: 'Serviços', href: 'servicos' },
-  { label: 'Depoimentos', href: 'depoimentos' },
   { label: 'Blog', href: 'blog' },
   { label: 'Contato', href: 'agendamento' },
 ];
@@ -198,7 +197,6 @@ function Footer() {
                 { label: 'Sobre', href: 'sobre' },
                 { label: 'Especialidades', href: 'especialidades' },
                 { label: 'Serviços e Preços', href: 'servicos' },
-                { label: 'Depoimentos', href: 'depoimentos' },
                 { label: 'Blog', href: 'blog' },
               ].map((item) => (
                 <li key={item.href}>
