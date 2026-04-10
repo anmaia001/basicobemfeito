@@ -394,17 +394,17 @@ function SchedulingSection() {
 
   const buildWhatsappMessage = () => {
     const lines = [
-      '👋 Olá! Gostaria de agendar uma consultoria financeira.',
+      'Ola! Gostaria de agendar uma consultoria financeira.',
       '',
-      `📋 *Meus dados:*`,
-      `• Nome: ${formData.name}`,
-      formData.company ? `• Empresa: ${formData.company}` : '',
-      `• WhatsApp: ${formData.phone}`,
+      'Meus dados:',
+      `Nome: ${formData.name}`,
+      formData.company ? `Empresa: ${formData.company}` : '',
+      `WhatsApp: ${formData.phone}`,
       '',
-      `💼 *Meu desafio financeiro:*`,
+      'Meu desafio financeiro:',
       formData.challenge,
       '',
-      'Aguardo o contato para combinarmos a melhor data e horário. Obrigado!',
+      'Aguardo o contato para combinarmos a melhor data e horario. Obrigado!',
     ].filter(Boolean).join('\n');
     return encodeURIComponent(lines);
   };
