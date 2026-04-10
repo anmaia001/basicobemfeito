@@ -384,54 +384,78 @@ function ServicesSection() {
 // SCHEDULING SECTION
 // ============================================================
 function SchedulingSection() {
-  const [selectedDate, setSelectedDate] = useState('');
-  const [selectedTime, setSelectedTime] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
     company: '',
     challenge: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!selectedDate || !selectedTime || !formData.name) return;
-    setSubmitted(true);
+  const buildWhatsappMessage = () => {
+    const lines = [
+      '👋 Olá! Gostaria de agendar uma consultoria financeira.',
+      '',
+      `📋 *Meus dados:*`,
+      `• Nome: ${formData.name}`,
+      formData.company ? `• Empresa: ${formData.company}` : '',
+      `• WhatsApp: ${formData.phone}`,
+      '',
+      `💼 *Meu desafio financeiro:*`,
+      formData.challenge,
+      '',
+      'Aguardo o contato para combinarmos o melhor horário. Obrigado!',
+    ].filter(Boolean).join('\n');
+    return encodeURIComponent(lines);
   };
 
-  const today = new Date().toISOString().split('T')[0];
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formData.name || !formData.phone || !formData.challenge) return;
+    setSubmitted(true);
+  };
 
   if (submitted) {
     return (
       <section id="agendamento" className="py-20 lg:py-28 bg-muted/40">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-xl">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="bg-card border border-border rounded-2xl p-10 text-center shadow-sm"
+            transition={{ type: 'spring', stiffness: 260, damping: 30 }}
+            className="bg-card border border-border rounded-2xl p-8 text-center shadow-sm"
           >
-            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5">
               <CheckCircle className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-3">Agendamento Confirmado!</h3>
-            <p className="text-muted-foreground mb-4">
-              Sua consulta foi agendada para <strong className="text-foreground">{selectedDate}</strong> às <strong className="text-foreground">{selectedTime}</strong>.
-            </p>
-            <p className="text-muted-foreground text-sm mb-6">
-              Em breve você receberá a confirmação por e-mail com o link para a videoconferência.
+            <h3 className="text-2xl font-bold text-foreground mb-2"
+              style={{ fontFamily: "'Playfair Display', serif" }}>
+              Formulário preenchido!
+            </h3>
+            <p className="text-muted-foreground text-sm mb-8 leading-relaxed">
+              Clique no botão abaixo para finalizar o agendamento via WhatsApp.
+              Suas informações já estarão na mensagem.
             </p>
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Acabei de agendar uma consultoria para ${selectedDate} às ${selectedTime}.`)}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${buildWhatsappMessage()}`}
               target="_blank"
               rel="noopener noreferrer"
+              className="block"
             >
-              <Button className="bg-green-500 hover:bg-green-600 text-white gap-2">
-                <MessageCircle className="w-4 h-4" />
-                Confirmar via WhatsApp
+              <Button
+                size="lg"
+                className="w-full bg-green-500 hover:bg-green-600 text-white gap-3 h-14 text-base font-semibold shadow-lg shadow-green-500/30 animate-pulse"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Para finalizar o agendamento, clique aqui
               </Button>
             </a>
+            <button
+              onClick={() => setSubmitted(false)}
+              className="mt-4 text-xs text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2"
+            >
+              Voltar e editar informações
+            </button>
           </motion.div>
         </div>
       </section>
@@ -456,7 +480,7 @@ function SchedulingSection() {
             Agende sua consultoria online
           </h2>
           <p className="text-muted-foreground text-lg">
-            Preencha o formulário e escolha o melhor horário. Atendimento 100% online.
+            Preencha o formulário e combine o melhor horário pelo WhatsApp. Atendimento 100% online.
           </p>
         </motion.div>
 
@@ -469,9 +493,9 @@ function SchedulingSection() {
                 <div className="space-y-4">
                   {[
                     { step: '1', title: 'Preencha o formulário', desc: 'Informe seu desafio financeiro atual' },
-                    { step: '2', title: 'Escolha data e hora', desc: 'Horários disponíveis de seg–sex' },
-                    { step: '3', title: 'Confirmação automática', desc: 'Receba o link da videochamada' },
-                    { step: '4', title: 'Consultoria online', desc: 'Atendimento profissional e sigiloso' },
+                    { step: '2', title: 'Clique em Agendar', desc: 'Suas informações são preparadas automaticamente' },
+                    { step: '3', title: 'Finalize pelo WhatsApp', desc: 'Um clique envia tudo para o consultor' },
+                    { step: '4', title: 'Combine o horário', desc: 'O consultor confirma data e hora com você' },
                   ].map(({ step, title, desc }) => (
                     <div key={step} className="flex gap-3">
                       <div className="w-7 h-7 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold flex-shrink-0">
@@ -525,61 +549,16 @@ function SchedulingSection() {
                         className="h-11"
                       />
                     </div>
-                    <div>
-                      <Label htmlFor="email" className="text-sm font-medium mb-1.5 block">E-mail *</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="seu@email.com"
-                        value={formData.email}
-                        onChange={(e) => setFormData(f => ({ ...f, email: e.target.value }))}
-                        required
-                        className="h-11"
-                      />
-                    </div>
-                    <div>
+                    <div className="sm:col-span-2">
                       <Label htmlFor="phone" className="text-sm font-medium mb-1.5 block">WhatsApp *</Label>
                       <Input
                         id="phone"
-                        placeholder="(11) 99999-9999"
+                        placeholder="(24) 99999-9999"
                         value={formData.phone}
                         onChange={(e) => setFormData(f => ({ ...f, phone: e.target.value }))}
                         required
                         className="h-11"
                       />
-                    </div>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="date" className="text-sm font-medium mb-1.5 block">Data preferida *</Label>
-                    <Input
-                      id="date"
-                      type="date"
-                      min={today}
-                      value={selectedDate}
-                      onChange={(e) => setSelectedDate(e.target.value)}
-                      required
-                      className="h-11"
-                    />
-                  </div>
-
-                  <div>
-                    <Label className="text-sm font-medium mb-2 block">Horário preferido *</Label>
-                    <div className="grid grid-cols-4 gap-2">
-                      {availableTimes.map((time) => (
-                        <button
-                          key={time}
-                          type="button"
-                          onClick={() => setSelectedTime(time)}
-                          className={`py-2.5 rounded-lg text-sm font-medium border transition-all ${
-                            selectedTime === time
-                              ? 'bg-primary text-primary-foreground border-primary'
-                              : 'bg-background text-foreground border-border hover:border-primary/40 hover:bg-muted'
-                          }`}
-                        >
-                          {time}
-                        </button>
-                      ))}
                     </div>
                   </div>
 
