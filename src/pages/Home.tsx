@@ -404,7 +404,7 @@ function SchedulingSection() {
       `💼 *Meu desafio financeiro:*`,
       formData.challenge,
       '',
-      'Aguardo o contato para combinarmos o melhor horário. Obrigado!',
+      'Aguardo o contato para combinarmos a melhor data e horário. Obrigado!',
     ].filter(Boolean).join('\n');
     return encodeURIComponent(lines);
   };
