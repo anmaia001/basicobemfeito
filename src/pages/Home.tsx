@@ -511,15 +511,6 @@ function SchedulingSection() {
               </CardContent>
             </Card>
 
-            <Card className="border border-border bg-primary text-primary-foreground">
-              <CardContent className="p-6">
-                <Clock className="w-6 h-6 text-accent mb-3" />
-                <h4 className="font-semibold mb-1">Horários de atendimento</h4>
-                <p className="text-primary-foreground/70 text-sm">Segunda a Sexta</p>
-                <p className="text-accent font-mono font-bold text-lg mt-1">08h – 18h</p>
-                <p className="text-primary-foreground/50 text-xs mt-2">Horário de Brasília</p>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Form */}
