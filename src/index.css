@@ -40,47 +40,58 @@
   /* Typography */
   --font-sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: IBM Plex Mono, 'Courier New', monospace;
-  
+
   /* Radius */
   --radius: 0.5rem;
 
-  /* Core UI Tokens */
-  --background: oklch(0.99 0 0);
-  --foreground: oklch(0.15 0.02 210);
-  --card: oklch(0.98 0.005 210);
-  --card-foreground: oklch(0.18 0.02 210);
-  --popover: oklch(0.99 0 0);
-  --popover-foreground: oklch(0.15 0.02 210);
-  --primary: oklch(0.28 0.08 210);
-  --primary-foreground: oklch(0.98 0.005 210);
-  --secondary: oklch(0.92 0.01 210);
-  --secondary-foreground: oklch(0.22 0.03 210);
-  --muted: oklch(0.95 0.005 210);
-  --muted-foreground: oklch(0.48 0.02 210);
-  --accent: oklch(0.65 0.12 45);
-  --accent-foreground: oklch(0.15 0.02 210);
+  /* PSICOLOGIA DAS CORES:
+     Azul profundo  → confiança, credibilidade, estabilidade (financeiro)
+     Verde esmeralda → crescimento, prosperidade, resultados
+     Âmbar/Dourado  → ação, premium, destaque de CTAs
+     Cinza quente   → sofisticação, neutralidade elegante
+  */
+
+  --background: oklch(0.98 0 0);
+  --foreground: oklch(0.14 0.025 240);
+  --card: oklch(0.99 0.003 240);
+  --card-foreground: oklch(0.16 0.025 240);
+  --popover: oklch(0.98 0 0);
+  --popover-foreground: oklch(0.14 0.025 240);
+
+  /* Azul profundo — confiança e autoridade financeira */
+  --primary: oklch(0.26 0.1 240);
+  --primary-foreground: oklch(0.98 0.003 240);
+
+  --secondary: oklch(0.93 0.01 240);
+  --secondary-foreground: oklch(0.22 0.03 240);
+  --muted: oklch(0.95 0.006 240);
+  --muted-foreground: oklch(0.50 0.02 240);
+
+  /* Âmbar dourado — ação, CTA, destaque premium */
+  --accent: oklch(0.68 0.14 52);
+  --accent-foreground: oklch(0.14 0.025 240);
+
   --destructive: oklch(0.55 0.22 10);
   --destructive-foreground: oklch(0.98 0.005 10);
-  --border: oklch(0.88 0.01 210);
-  --input: oklch(0.88 0.01 210);
-  --ring: oklch(0.65 0.12 45);
-  
-  /* Chart Tokens */
-  --chart-1: oklch(0.45 0.15 210);
-  --chart-2: oklch(0.65 0.12 45);
-  --chart-3: oklch(0.55 0.18 150);
-  --chart-4: oklch(0.62 0.14 280);
+  --border: oklch(0.88 0.01 240);
+  --input: oklch(0.88 0.01 240);
+  --ring: oklch(0.68 0.14 52);
+
+  /* Verde esmeralda — crescimento, resultados, sucesso */
+  --chart-1: oklch(0.48 0.14 160);
+  --chart-2: oklch(0.68 0.14 52);
+  --chart-3: oklch(0.26 0.1 240);
+  --chart-4: oklch(0.60 0.12 280);
   --chart-5: oklch(0.58 0.16 30);
-  
-  /* Sidebar Tokens */
-  --sidebar: oklch(0.97 0.005 210);
-  --sidebar-foreground: oklch(0.22 0.03 210);
-  --sidebar-primary: oklch(0.28 0.08 210);
-  --sidebar-primary-foreground: oklch(0.98 0.005 210);
-  --sidebar-accent: oklch(0.92 0.01 210);
-  --sidebar-accent-foreground: oklch(0.22 0.03 210);
-  --sidebar-border: oklch(0.88 0.01 210);
-  --sidebar-ring: oklch(0.65 0.12 45);
+
+  --sidebar: oklch(0.97 0.005 240);
+  --sidebar-foreground: oklch(0.22 0.03 240);
+  --sidebar-primary: oklch(0.26 0.1 240);
+  --sidebar-primary-foreground: oklch(0.98 0.003 240);
+  --sidebar-accent: oklch(0.93 0.01 240);
+  --sidebar-accent-foreground: oklch(0.22 0.03 240);
+  --sidebar-border: oklch(0.88 0.01 240);
+  --sidebar-ring: oklch(0.68 0.14 52);
 }
 
 .dark {

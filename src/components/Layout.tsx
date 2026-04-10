@@ -44,15 +44,14 @@ function Header() {
           {/* Logo */}
           <button
             onClick={() => scrollTo('hero')}
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-2.5 group"
           >
-            <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
-              <span className="text-accent-foreground font-bold text-lg font-mono">CF</span>
+            <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
+              <span className="text-accent-foreground font-extrabold text-base tracking-tight">CF</span>
             </div>
-            <div className="hidden sm:block">
-              <p className="text-primary-foreground font-semibold text-sm leading-tight">Consultoria</p>
-              <p className="text-accent text-xs font-medium leading-tight">Financeira PME</p>
-              <p className="text-primary-foreground/50 text-xs leading-tight">www.basicobemfeito.online</p>
+            <div className="flex flex-col leading-none">
+              <span className="text-primary-foreground font-bold text-sm tracking-wide">Básico Bem Feito</span>
+              <span className="text-accent text-[10px] font-medium tracking-widest uppercase">Consultoria Financeira</span>
             </div>
           </button>
 
@@ -157,14 +156,13 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
-                <span className="text-accent-foreground font-bold text-lg font-mono">CF</span>
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
+                <span className="text-accent-foreground font-extrabold text-base tracking-tight">CF</span>
               </div>
-              <div>
-                <p className="font-semibold leading-tight">Consultoria Financeira PME</p>
-                <p className="text-accent text-xs font-medium">Resultados sustentáveis</p>
-                <p className="text-primary-foreground/50 text-xs">www.basicobemfeito.online</p>
+              <div className="flex flex-col leading-none">
+                <span className="text-primary-foreground font-bold text-sm tracking-wide">Básico Bem Feito</span>
+                <span className="text-accent text-[10px] font-medium tracking-widest uppercase">Consultoria Financeira</span>
               </div>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-sm">

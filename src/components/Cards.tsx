@@ -80,11 +80,11 @@ export function ServiceCard({ pkg, onSchedule, onWhatsApp }: {
         </p>
       </div>
 
-      <div className="flex items-end gap-1">
-        <span className={`text-4xl font-bold font-mono ${pkg.highlight ? 'text-accent' : 'text-primary'}`}>
+      <div className="flex items-baseline gap-1 flex-wrap">
+        <span className={`text-3xl font-bold font-mono whitespace-nowrap ${pkg.highlight ? 'text-accent' : 'text-primary'}`}>
           {pkg.price}
         </span>
-        <span className={`text-sm mb-1 ${pkg.highlight ? 'text-primary-foreground/60' : 'text-muted-foreground'}`}>
+        <span className={`text-sm ${pkg.highlight ? 'text-primary-foreground/60' : 'text-muted-foreground'}`}>
           {pkg.period}
         </span>
       </div>
