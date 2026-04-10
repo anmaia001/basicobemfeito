@@ -367,7 +367,7 @@ function ServicesSection() {
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground mb-4">Formas de pagamento aceitas</p>
           <div className="flex flex-wrap justify-center gap-4">
-            {['Pix (Pagamento instantâneo)', 'Transferência bancária', 'Boleto bancário'].map((method) => (
+            {['Pix (Pagamento instantâneo)', 'Transferência bancária'].map((method) => (
               <span key={method} className="flex items-center gap-2 text-sm text-foreground bg-muted px-4 py-2 rounded-full">
                 <CheckCircle className="w-3.5 h-3.5 text-primary" />
                 {method}
@@ -913,7 +913,6 @@ export default function Home() {
       <SpecialtiesSection />
       <ServicesSection />
       <SchedulingSection />
-      <PaymentSection />
       <BlogSection />
       <CtaSection />
     </>

@@ -47,7 +47,7 @@ function Header() {
             className="flex items-center gap-2.5 group"
           >
             <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
-              <span className="text-accent-foreground font-extrabold text-base tracking-tight">CF</span>
+              <span className="text-accent-foreground font-extrabold text-base tracking-tight">BF</span>
             </div>
             <div className="flex flex-col leading-none">
               <span className="text-primary-foreground font-bold text-sm tracking-wide">Básico Bem Feito</span>
@@ -158,7 +158,7 @@ function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
-                <span className="text-accent-foreground font-extrabold text-base tracking-tight">CF</span>
+                <span className="text-accent-foreground font-extrabold text-base tracking-tight">BF</span>
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-primary-foreground font-bold text-sm tracking-wide">Básico Bem Feito</span>
