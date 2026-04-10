@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import ArticlePatrao from '@/pages/ArticlePatrao';
 import ArticleControladoria from '@/pages/ArticleControladoria';
 import ArticleCustos from '@/pages/ArticleCustos';
+import ArticleInadimplencia from '@/pages/ArticleInadimplencia';
 import {
   MessageCircle, Phone, ChevronDown, TrendingUp,
   Shield, Award, Zap, Calendar, QrCode, Copy,
@@ -768,6 +769,10 @@ function BlogSection() {
     return <ArticlePatrao onBack={() => setOpenArticle(null)} />;
   }
 
+  if (openArticle === 'inadimplencia2025') {
+    return <ArticleInadimplencia onBack={() => setOpenArticle(null)} />;
+  }
+
   if (openArticle === 'custos') {
     return <ArticleCustos onBack={() => setOpenArticle(null)} />;
   }
@@ -810,8 +815,8 @@ function BlogSection() {
           {blogPosts.map((post) => (
             <motion.div key={post.id} variants={staggerItem}>
               <div
-                onClick={() => ['0','controladoria','custos'].includes(post.id) ? setOpenArticle(post.id) : undefined}
-                className={['0','controladoria','custos'].includes(post.id) ? 'cursor-pointer' : ''}>
+                onClick={() => ['0','controladoria','custos','inadimplencia2025'].includes(post.id) ? setOpenArticle(post.id) : undefined}
+                className={['0','controladoria','custos','inadimplencia2025'].includes(post.id) ? 'cursor-pointer' : ''}>
                 <BlogCard post={post} />
               </div>
             </motion.div>

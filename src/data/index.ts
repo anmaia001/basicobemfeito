@@ -134,6 +134,14 @@ export const testimonials: Testimonial[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'inadimplencia2025',
+    title: 'CNPJs no vermelho: 8,9 milhões de empresas inadimplentes em 2025',
+    excerpt: 'O Brasil fechou 2025 com patamar recorde de inadimplência empresarial. Dívida média de R$ 23.818 por CNPJ, Selic a 15% e micro empresas no epicentro da crise.',
+    category: 'Endividamento',
+    readTime: '5 min',
+    date: '09 Abr 2026',
+  },
+  {
     id: 'custos',
     title: 'Conceitos Básicos de Custos: o que todo empresário precisa saber',
     excerpt: 'Entenda a diferença entre custos e despesas, como o mercado define o preço de venda (e não você), e como classificar custos fixos, variáveis, diretos e indiretos para tomar decisões melhores.',
