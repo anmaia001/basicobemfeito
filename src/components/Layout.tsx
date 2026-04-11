@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { Menu, X, Calendar, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE } from '@/lib/index';
@@ -84,7 +84,7 @@ function Header() {
               className="bg-accent text-accent-foreground hover:bg-accent/90 gap-2"
               onClick={() => scrollTo('agendamento')}
             >
-              <Phone className="w-4 h-4" />
+                <Calendar className="w-4 h-4" />
               Agendar
             </Button>
           </div>
@@ -131,7 +131,7 @@ function Header() {
                   className="w-full bg-accent text-accent-foreground hover:bg-accent/90 gap-2"
                   onClick={() => scrollTo('agendamento')}
                 >
-                  <Phone className="w-4 h-4" />
+                  <Calendar className="w-4 h-4" />
                   Agendar Consultoria
                 </Button>
               </div>
