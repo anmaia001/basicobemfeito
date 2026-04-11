@@ -76,11 +76,7 @@ function HeroSection() {
           variants={staggerContainer}
           className="max-w-4xl mx-auto text-center"
         >
-          <motion.div variants={staggerItem}>
-            <Badge className="bg-accent/20 text-accent border-accent/30 mb-6 font-medium">
-              Consultoria Financeira para PME
-            </Badge>
-          </motion.div>
+          <motion.div variants={staggerItem} />
 
           <motion.h1
             variants={staggerItem}
