@@ -29,7 +29,8 @@ export function SpecialtyCard({ specialty }: { specialty: Specialty }) {
   const IconComp = iconMap[specialty.icon] || LayoutDashboard;
   return (
     <motion.div
-      whileHover={{ y: -4 }}
+      whileHover={{ y: -6, scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
       transition={{ type: 'spring', stiffness: 400, damping: 25 }}
     >
       <Card className="h-full border border-border hover:border-accent/40 transition-all duration-300 hover:shadow-md group">
