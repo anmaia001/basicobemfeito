@@ -60,9 +60,9 @@ function HeroSection() {
         <img
           src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
           alt="Consultoria empresarial"
-          className="w-full h-full object-cover object-center opacity-20"
+          className="w-full h-full object-cover object-center opacity-45"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/85" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-primary/55" />
       </div>
 
       {/* Decorative elements */}
