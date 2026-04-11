@@ -858,7 +858,7 @@ function CtaSection() {
               onClick={() => document.getElementById('agendamento')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Calendar className="w-5 h-5" />
-              Agendar Consultoria Gratuita
+              Agendar Consultoria
             </Button>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               <Button
