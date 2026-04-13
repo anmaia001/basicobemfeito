@@ -157,14 +157,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min',
     date: '09 Abr 2026',
   },
-  {
-    id: '0',
-    title: 'O Patrão Sou Eu: Guia Prático para o Empreendedor',
-    excerpt: 'Uma síntese analítica da obra de Giovana Simonaci: seis perguntas fundamentais que todo empresário deve responder antes de abrir — ou transformar — seu negócio.',
-    category: 'Gestão Empresarial',
-    readTime: '12 min',
-    date: '09 Abr 2026',
-  },
+
 
 ];
 
