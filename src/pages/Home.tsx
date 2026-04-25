@@ -814,12 +814,16 @@ function BlogSection() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
         >
           {blogPosts.map((post) => (
-            <motion.div key={post.id} variants={staggerItem}>
-              <div
-                onClick={() => setOpenArticle(post.id)}
-                className="cursor-pointer">
-                <BlogCard post={post} />
-              </div>
+            <motion.div
+              key={post.id}
+              variants={staggerItem}
+              onClick={() => setOpenArticle(post.id)}
+              className="cursor-pointer h-full"
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === 'Enter' && setOpenArticle(post.id)}
+            >
+              <BlogCard post={post} />
             </motion.div>
           ))}
         </motion.div>
