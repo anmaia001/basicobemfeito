@@ -816,8 +816,8 @@ function BlogSection() {
           {blogPosts.map((post) => (
             <motion.div key={post.id} variants={staggerItem}>
               <div
-                onClick={() => ['0','controladoria','custos','inadimplencia2025'].includes(post.id) ? setOpenArticle(post.id) : undefined}
-                className={['0','controladoria','custos','inadimplencia2025'].includes(post.id) ? 'cursor-pointer' : ''}>
+                onClick={() => setOpenArticle(post.id)}
+                className="cursor-pointer">
                 <BlogCard post={post} />
               </div>
             </motion.div>
