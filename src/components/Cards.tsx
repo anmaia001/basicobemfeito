@@ -176,7 +176,16 @@ export function BlogCard({ post }: { post: BlogPost }) {
       whileHover={{ y: -4 }}
       transition={{ type: 'spring', stiffness: 400, damping: 25 }}
     >
-      <Card className="h-full border border-border hover:border-primary/20 hover:shadow-md transition-all duration-300 group cursor-pointer">
+      <Card className="h-full border border-border hover:border-primary/20 hover:shadow-md transition-all duration-300 group cursor-pointer overflow-hidden">
+        {post.image && (
+          <div className="w-full h-40 overflow-hidden">
+            <img
+              src={post.image}
+              alt={post.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        )}
         <CardContent className="p-6 flex flex-col gap-4">
           <div className="flex items-center justify-between">
             <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${colorClass}`}>

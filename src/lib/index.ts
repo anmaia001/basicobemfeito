@@ -36,6 +36,7 @@ export interface BlogPost {
   category: string;
   readTime: string;
   date: string;
+  image?: string;
 }
 
 export interface TimeSlot {

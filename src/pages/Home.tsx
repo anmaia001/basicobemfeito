@@ -5,6 +5,7 @@ import ArticlePatrao from '@/pages/ArticlePatrao';
 import ArticleControladoria from '@/pages/ArticleControladoria';
 import ArticleCustos from '@/pages/ArticleCustos';
 import ArticleInadimplencia from '@/pages/ArticleInadimplencia';
+import ArticleDesafiosPME from '@/pages/ArticleDesafiosPME';
 import {
   MessageCircle, Phone, ChevronDown, TrendingUp,
   Shield, Award, Zap, Calendar, QrCode, Copy,
@@ -763,6 +764,10 @@ function BlogSection() {
 
   if (openArticle === '0') {
     return <ArticlePatrao onBack={() => setOpenArticle(null)} />;
+  }
+
+  if (openArticle === 'desafios-pme') {
+    return <ArticleDesafiosPME onBack={() => setOpenArticle(null)} />;
   }
 
   if (openArticle === 'inadimplencia2025') {

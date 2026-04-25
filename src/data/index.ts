@@ -134,6 +134,15 @@ export const testimonials: Testimonial[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'desafios-pme',
+    title: 'Os grandes desafios do pequeno e médio empresário: como liderar sem enxergar os números',
+    excerpt: 'Juros, concorrência, carga fiscal — mas o maior obstáculo pode estar dentro da própria empresa. Descubra por que empreender sem dados estruturados é como correr de olhos vendados.',
+    category: 'Gestão de Negócios',
+    readTime: '5 min',
+    date: '25 Abr 2026',
+    image: '/images/ilustracao-desafios-pme.png',
+  },
+  {
     id: 'inadimplencia2025',
     title: 'CNPJs no vermelho: 8,9 milhões de empresas inadimplentes em 2025',
     excerpt: 'O Brasil fechou 2025 com patamar recorde de inadimplência empresarial. Dívida média de R$ 23.818 por CNPJ, Selic a 15% e micro empresas no epicentro da crise.',
