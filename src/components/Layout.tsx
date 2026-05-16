@@ -44,15 +44,13 @@ function Header() {
           {/* Logo */}
           <button
             onClick={() => scrollTo('hero')}
-            className="flex items-center gap-2.5 group"
+            className="flex items-center group"
           >
-            <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
-              <span className="text-accent-foreground font-extrabold text-base tracking-tight">P</span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-primary-foreground font-bold text-sm tracking-wide">O Patrão sou Eu</span>
-              <span className="text-accent text-[10px] font-medium tracking-widest uppercase">Consultoria Financeira</span>
-            </div>
+            <img
+              src="/images/logomarca.png"
+              alt="O Patrão sou Eu - Consultoria Financeira"
+              className="h-12 lg:h-14 w-auto object-contain"
+            />
           </button>
 
           {/* Desktop Nav */}
@@ -156,14 +154,12 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
-                <span className="text-accent-foreground font-extrabold text-base tracking-tight">P</span>
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-primary-foreground font-bold text-sm tracking-wide">O Patrão sou Eu</span>
-                <span className="text-accent text-[10px] font-medium tracking-widest uppercase">Consultoria Financeira</span>
-              </div>
+            <div className="mb-4">
+              <img
+                src="/images/logomarca.png"
+                alt="O Patrão sou Eu - Consultoria Financeira"
+                className="h-14 w-auto object-contain"
+              />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-sm">
               Quem manda no negócio precisa dominar os números.
