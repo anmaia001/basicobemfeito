@@ -6,6 +6,7 @@ import ArticleControladoria from '@/pages/ArticleControladoria';
 import ArticleCustos from '@/pages/ArticleCustos';
 import ArticleInadimplencia from '@/pages/ArticleInadimplencia';
 import ArticleDesafiosPME from '@/pages/ArticleDesafiosPME';
+import ArticlePodcast from '@/pages/ArticlePodcast';
 import {
   MessageCircle, Phone, ChevronDown, TrendingUp,
   Shield, Award, Zap, Calendar, QrCode, Copy,
@@ -776,6 +777,10 @@ function BlogSection() {
 
   if (openArticle === 'custos') {
     return <ArticleCustos onBack={() => setOpenArticle(null)} />;
+  }
+
+  if (openArticle === 'podcast-investimento') {
+    return <ArticlePodcast onBack={() => setOpenArticle(null)} />;
   }
 
   if (openArticle === 'controladoria') {

@@ -166,8 +166,14 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min',
     date: '09 Abr 2026',
   },
-
-
+  {
+    id: 'podcast-investimento',
+    title: 'Podcast: Análise de Investimento — Investir sem análise é apostar, não empreender',
+    excerpt: 'André Maia explica como usar VPL, TIR e Payback para avaliar investimentos com segurança. Ouça o episódio do O Patrão Sou Eu Cast e leia o resumo completo.',
+    category: 'Podcast',
+    readTime: '6 min',
+    date: '26 Mai 2026',
+  },
 ];
 
 export const availableTimes = [
